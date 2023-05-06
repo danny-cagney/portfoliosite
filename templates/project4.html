@@ -11,7 +11,7 @@
     <section class="hero">
       <nav>
         <ul id="nav-list">
-          <li><a href="#about-me">About Me</a></li>
+          <li><a href="{{ url_for('index')}}">About Me</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#blog">Blog</a></li>
           <li><a href="#contacts">Contacts</a></li>
@@ -23,8 +23,8 @@
     </section>
     <section class="sub-section" id="about-me">
       <div class="information">
-        <h2>Project - Machine Learning</h2>
-        <p>This project is about Machine Learing</p>
+        <h2>Project 4 - Data Analysis</h2>
+        <p>This project is about Machine Learning</p>
       </div>
       <div class="headshot-container">
         <img class="headshot" src="{{ url_for('static', filename='images/headshot1.png') }}" alt="Headshot of Daniel Cagney"/>
