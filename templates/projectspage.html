@@ -12,7 +12,7 @@
       <nav>
         <ul id="nav-list">
           <li><a href="{{ url_for('index')}}">Home</a></li>
-          <li><a href="{{ url_for('projectspage')}}">Projects</a></li>
+          <!-- <li><a href="#projects">Projects</a></li> -->
           <li><a href="#blog">Blog</a></li>
           <li><a href="#contacts">Contacts</a></li>
         </ul>
@@ -21,17 +21,38 @@
         </button>
       </nav>
     </section>
-    <section class="sub-section" id="about-me">
-      <div class="information">
-        <h2>Project One - Facial Recognition using OpenCV</h2>
-        <p>This project is about Machine Learing</p>
-      </div>
-      <div class="headshot-container">
-        <img class="headshot" src="{{ url_for('static', filename='images/headshot1.png') }}" alt="Headshot of Daniel Cagney"/>
-      </div>
-    </section>
     <section class="sub-section-alternative" id="projects">
-          
+      <h2>Projects</h2>
+      <div class="project-container">
+        <div class="project-card">
+          <img class="project-image" src="{{ url_for('static', filename='images/headshot2.png') }}" alt="Project One Image"/>
+          <h3>Project One - Facial Recognition using OpenCV</h3>
+          <p class="subtext">This project uses the OpenCV library for facial recognition</p>
+          <hr/>
+          <p class="subtext"><a class="project-link" href="{{ url_for('project1') }}">View here</a></p>
+        </div>
+        <div class="project-card">
+          <img class="project-image" src="{{ url_for('static', filename='images/headshot2.png') }}" alt="Project Two Image"/>
+          <h3>Project Two - Build a Recommender System</h3>
+          <p class="subtext">This is information about my project</p>
+          <hr/>
+          <p class="subtext"><a class="project-link" href="{{ url_for('project2') }}">View here</a></p>
+        </div>
+        <div class="project-card">
+          <img class="project-image" src="{{ url_for('static', filename='images/headshot2.png') }}" alt="Project Three Image"/>
+          <h3>Project Three - Machine Learning Model with Python</h3>
+          <p class="subtext">In this project, I build a Machine Learning Model with Python</p>
+          <hr/>
+          <p class="subtext"><a class="project-link" href="{{ url_for('project3') }}">View here</a></p>
+        </div>
+        <div class="project-card">
+          <img class="project-image" src="{{ url_for('static', filename='images/headshot2.png') }}" alt="Project Four Image"/>
+          <h3>Project Four - Data Analysis</h3>
+          <p class="subtext">This is information about my project</p>
+          <hr/>
+          <p class="subtext"><a class="project-link" href="{{ url_for('project4') }}">View here</a></p>
+        </div>
+      </div>
     </section>
     <footer id="contacts">
       <h2>Contact me</h2>
@@ -50,4 +71,3 @@
     <script src="{{ url_for('static', filename='app.js') }}"></script>
   </body>
 </html>
-
