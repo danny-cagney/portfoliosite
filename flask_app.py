@@ -14,13 +14,13 @@ def project1():
     return render_template("project1.html")
 
 @app.route("/project2")
-def index():
+def project2():
     return render_template("project2.html")
 
 @app.route("/project3")
-def index():
+def project3():
     return render_template("project3.html")
 
 @app.route("/project4")
-def index():
+def project4():
     return render_template("project4.html")
